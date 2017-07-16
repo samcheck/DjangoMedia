@@ -1,3 +1,7 @@
+# db and migrations
+dmedia/movies/migrations/
+*.sqlite3
+
 # virtual env
 vDM/
 
