@@ -2,7 +2,7 @@
     <ul>
         {% for movie in latest_movies_added%}
         <li>
-            <a href="{% url 'movies:detail' movie.id %}">{{ movie.movie_title }} ({{ movie.year_released}})</a>
+            <a href="{% url 'movies:detail' movie.movie_title %}">{{ movie.movie_title }} ({{ movie.year_released}})</a>
         </li>
         {% endfor %}
     </ul>

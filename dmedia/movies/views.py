@@ -9,6 +9,6 @@ def index(request):
     context = {'latest_movies_added': latest_movies_added}
     return render(request, 'movies/index.html', context)
 
-def detail(request, movie_id):
-    movie = get_object_or_404(Movie, pk=movie_id)
+def detail(request, movie_title):
+    movie = get_object_or_404(Movie, movie_title=movie_title)
     return render(request, 'movies/detail.html', {'movie': movie})
